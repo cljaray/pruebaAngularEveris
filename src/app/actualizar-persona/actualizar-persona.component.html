@@ -1,0 +1,12 @@
+
+<ng-container *ngIf="apiPersona.personaActual else mensaje">
+    <app-forma></app-forma>
+    <button (click)="guardar()">Guardar</button>
+    <button (click) ="ingresarNuevo()">Ingresar Nuevo</button>
+</ng-container>
+
+<ng-template #mensaje>
+    <p>Selecciona una persona del menu para editar o crea una nueva haciendo click en el boton </p>
+    <button (click) ="ingresarNuevo()">Ingresar Nuevo</button>
+</ng-template>
+

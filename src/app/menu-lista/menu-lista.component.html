@@ -1,0 +1,13 @@
+<ng-container *ngIf="apiPersona.todasLasPersonas else mensaje">
+    <ul>
+        <ng-container *ngFor="let persona of apiPersona.todasLasPersonas">
+            <li>
+                <a routerLink="informacion/{{persona.id}}" > {{persona.nombre}} </a>
+            </li>
+        </ng-container>
+    </ul>
+</ng-container>
+
+<ng-template #mensaje>
+    <p>Aun no hay personas ingresadas</p>
+</ng-template>

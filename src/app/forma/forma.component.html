@@ -1,0 +1,28 @@
+<ng-container *ngIf="apiPersona.personaActual">
+    <div class="input-group">
+        <label>Nombre:</label>
+        <input type="text" [(ngModel)]="apiPersona.personaActual.nombre">
+    </div>
+    <div class="input-group">
+        <label>Apellido:</label>
+        <input type="text" [(ngModel)]="apiPersona.personaActual.apellido">
+    </div>
+    <div class="input-group">
+        <label>Fecha de Nacimiento:</label>
+        <input type="text" [(ngModel)]="apiPersona.personaActual.fechaNacimiento">
+    </div>
+    <div class="input-group">
+        <label>Dirección:</label>
+        <input type="text" [(ngModel)]="apiPersona.personaActual.direccion">
+    </div>
+    <div class="input-group">
+        <label>Ciudad:</label>
+        <input type="text" [(ngModel)]="apiPersona.personaActual.ciudad">
+    </div>
+    <div class="input-group">
+        <label>País:</label>
+        <input type="text" [(ngModel)]="apiPersona.personaActual.pais">
+    </div>
+        <input type="hidden" [(ngModel)]="apiPersona.personaActual.id">
+
+    </ng-container>

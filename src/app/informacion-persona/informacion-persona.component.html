@@ -1,0 +1,11 @@
+<ng-container *ngIf="personaActual">
+    <p> Nombre: {{ personaActual.nombre }} </p>
+    <p> Apellido: {{ personaActual.apellido }} </p>
+    <p> Fecha de Nacimiento: {{ personaActual.fechaNacimiento }} </p>
+    <p> Dirección: {{ personaActual.direccion }} </p>
+    <p> Ciudad: {{ personaActual.ciudad }} </p>
+    <p> País: {{ personaActual.pais }} </p>
+</ng-container>
+
+<button (click) = "editar()">Editar</button>
+<button (click) = "ingresarNuevo()">Ingresar nuevo</button>
